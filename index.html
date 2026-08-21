@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Práctica de AJAX - Buscador de Animes">
+  <title>Buscador de Animes - Práctica AJAX</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <header id="top">
+    <div>
+      <h1>Zona OTAKU</h1>
+      <p><span>«</span> Ni tu <span>waifu</span> te busca tan rápido <span>»</span></p>
+    </div>
+  </header>
+  <main>
+    <section class="buscador">
+      <label for="inp-buscador">
+        Buscador:
+        <input type="text" id="inp-buscador" placeholder="Ingrese su búsqueda">
+      </label>
+      <button class="btn-buscador">🔍</button>
+    </section>
+
+    <section class="por-defecto">
+      <img class="default-img"
+        src="https://wallpapers.com/images/high/magnifying-glass-detective-anime-girl-79so2z2ucn7dxtdx.webp"
+        alt="default image">
+      <h5 class="defaul-title">Haz la busqueda, otaku. Sin miedo al éxito! 😉</h5>
+    </section>
+
+    <section class="sin-resultados oculto">
+      🤭Cero resultados. Y eso que nosotros también vemos cosas raras 🤣
+    </section>
+
+    <section class="contenedor-resultados oculto">
+      <div class="resultados">
+
+        <div class="result-card">
+          <div>
+            <img src="https://picsum.photos/250/300" alt="imagen del anime">
+          </div>
+          <h4>Título del ánime</h4>
+          <h5>Estudio</h5>
+          <div>
+            <div>
+              <strong>Año: </strong><span>xxxx</span>
+            </div>
+            <div>
+              <strong>Cant episodios: </strong><span>xxx</span>
+            </div>
+            <div>
+              <strong>Genero: </strong><span>xxxxxxxx</span>
+            </div>
+            <a href="#">↗️Visitar</a>
+          </div>
+        </div>
+
+
+      </div>
+      <div class="paginacion">
+        <div>
+          Resultados encontrados: <span id="total">1000</span>
+          Resultados en la página: <span id="pg-count">20</span>
+        </div>
+        <div>
+          <button class="pag-btn" id="btn-prev" disabled> ⬅️ Anterior</button>
+          Página <span id="pg-current">1</span> de <span id="pg-last">50</span>
+          <button class="pag-btn" id="btn-next" disabled>Siguiente ➡️ </button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>&copy; FACITEC - 2026</footer>
+  <script src="js/animaciones.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+
+</html>
